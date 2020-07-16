@@ -59,5 +59,6 @@ then
 	mkdir -p /home/$User/.config/switchcard/
 fi
 
-sudo mv card.conf /home/$User/.config/switchcard
-sudo mv *.png /home/$User/.config/switchcard
+sudo cp card.conf /home/$User/.config/switchcard
+sudo cp ./icon/*.png /home/$User/.config/switchcard
+sudo cp *.sh /opt/switchcard/
