@@ -1,4 +1,4 @@
-User=`echo $USER`
+Home=`echo $HOME`
 
 #提示文本
 echo '即将切换至Intel显卡，请输入登录密码，回车后会自动注销。在此之前，请保存好当前的工作。'
@@ -16,7 +16,7 @@ sudo mv $display_path/display_setup.sh  $diplay_path/display_setup.sh.bak
 sudo sed -i 's$display-setup-script=/etc/lightdm/display_setup.sh$#display-setup-script=$g' /etc/lightdm/lightdm.conf
 
 #更新conf
-echo -n 'Intel' | sudo tee /home/$User/.config/switchcard/card.conf > /dev/null
+echo -n 'Intel' | sudo tee $Home/.config/switchcard/card.conf > /dev/null
 
 #重启LightDM服务，注销即可切换
 sudo service lightdm restart
