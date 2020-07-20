@@ -40,7 +40,7 @@ void DDESwitchAppletWidget::ChangeIntelCard()
     }
     qDebug() << "ChangeIntel";
     
-    system("deepin-terminal -e /opt/switchcard/Intel.sh");
+    system("pkexec /opt/switchcard/Intel.sh");
 }
 
 void DDESwitchAppletWidget::ChangeNvidiaCard()
@@ -52,7 +52,7 @@ void DDESwitchAppletWidget::ChangeNvidiaCard()
     }
     qDebug() << "ChangeNvidia";
 
-    system("deepin-terminal -e /opt/switchcard/Nvidia.sh");
+    system("pkexec /opt/switchcard/Nvidia.sh");
 }
 
 void DDESwitchAppletWidget::UpdateConfig()
