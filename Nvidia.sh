@@ -1,4 +1,3 @@
-Home=
 WorkSpace=`pwd`
 
 #提示文本
