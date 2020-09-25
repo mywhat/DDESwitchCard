@@ -15,7 +15,7 @@ Actions=SwitchIntelAction;SwitchNvidiaAction;
 Name=Switch Intel
 Name[en]=Switch Intel
 Name[zh_CN]=英特尔显卡
-Exec=pkexec /usr/bin/bash /home/czh/Desktop/switch/Intel.sh
+Exec=pkexec /usr/bin/bash /opt/switchcard/Intel.sh
 
 [Desktop Action SwitchNvidiaAction]
 Name=Switch Nvidia

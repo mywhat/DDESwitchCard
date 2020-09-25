@@ -62,8 +62,8 @@ sudo cp card.conf $Home/.config/switchcard
 sudo cp ./icon/*.svg $Home/.config/switchcard
 
 #添加Home路径到Intel和Nvidia脚本
-sed -i '1iHome='"$Home"'' Intel.sh
-sed -i '1iHome='"$Home"'' Nvidia.sh
+sed -i '2iHome='"$Home"'' Intel.sh
+sed -i '2iHome='"$Home"'' Nvidia.sh
 
 if [ ! -d /opt/switchcard/ ]
 then
