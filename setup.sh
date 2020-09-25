@@ -50,8 +50,7 @@ sudo cp $WorkSpace/nvidia-graphics-drivers.conf.bak /etc/modprobe.d/
 sudo install -m 755 -p libSwitchVideoCard.so ~/.local/lib/dde-dock/plugins/libSwitchVideoCard.so
 
 #拓展右键菜单
-sudo cp SwitchIntel.desktop /usr/share/deepin/dde-file-manager/oem-menuextensions/
-sudo cp SwitchNvidia.desktop /usr/share/deepin/dde-file-manager/oem-menuextensions/
+sudo cp SwitchCard.desktop /usr/share/deepin/dde-file-manager/oem-menuextensions/
 
 #移动conf文件和图标到~/.config/switchcard
 if [ ! -d $Home/.config/switchcard/ ]
@@ -60,7 +59,7 @@ then
 fi
 
 sudo cp card.conf $Home/.config/switchcard
-sudo cp ./icon/*.png $Home/.config/switchcard
+sudo cp ./icon/*.svg $Home/.config/switchcard
 
 #添加Home路径到Intel和Nvidia脚本
 sed -i '1iHome='"$Home"'' Intel.sh

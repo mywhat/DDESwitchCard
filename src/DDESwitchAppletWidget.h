@@ -4,6 +4,7 @@
 #include <QPushButton>
 #include <QMessageBox>
 #include <QTimer>
+#include <DGuiApplicationHelper>
 
 class DDESwitchAppletWidget : public QWidget
 {
@@ -27,6 +28,7 @@ public:
     QString GetCardName();
     void UpdateConfig();
     void UpdateCardName();
+    void UpdateCardIcon();
 };
 
 #endif

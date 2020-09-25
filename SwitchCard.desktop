@@ -1,0 +1,24 @@
+[Desktop Entry]
+GenericName=Switch Card
+GenericName[en]=Switch Card
+GenericName[zh_CN]=切换显卡
+MimeType=*
+Name=Switch Card
+Name[en]=Switch Card
+Name[zh_CN]=切换显卡
+Type=Application
+X-DFM-MenuTypes=EmptyArea
+X-Deepin-Vendor=user-custom
+Actions=SwitchIntelAction;SwitchNvidiaAction;
+
+[Desktop Action SwitchIntelAction]
+Name=Switch Intel
+Name[en]=Switch Intel
+Name[zh_CN]=英特尔显卡
+Exec=pkexec /usr/bin/bash /home/czh/Desktop/switch/Intel.sh
+
+[Desktop Action SwitchNvidiaAction]
+Name=Switch Nvidia
+Name[zh_CN]=英伟达显卡
+Name[en]=Switch Nvidia
+Exec=pkexec /usr/bin/bash /opt/switchcard/Nvidia.sh

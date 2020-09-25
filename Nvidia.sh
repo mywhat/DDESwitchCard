@@ -1,3 +1,4 @@
+Home=/home/czh
 WorkSpace=`pwd`
 
 #提示文本

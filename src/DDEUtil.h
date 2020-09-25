@@ -8,7 +8,9 @@
 #include <QStandardPaths>
 
 #define ConfigFilePath "/.config/switchcard/card.conf"
-#define IntelIconPath "/.config/switchcard/Intel.png"
-#define NvidiaIconPath "/.config/switchcard/Nvidia.png"
+#define IntelIconLightPath "/.config/switchcard/IntelLight.svg"
+#define NvidiaIconLightPath "/.config/switchcard/NvidiaLight.svg"
+#define IntelIconDarkPath "/.config/switchcard/IntelDark.svg"
+#define NvidiaIconDarkPath "/.config/switchcard/NvidiaDark.svg"
 
 #endif
