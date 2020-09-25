@@ -1,4 +1,4 @@
-Home=/home/czh
+Home=
 WorkSpace=`pwd`
 
 #提示文本
