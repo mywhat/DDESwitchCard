@@ -8,3 +8,6 @@ mv libSwitchVideoCard ../..
 
 ## 使用
 ./setup.sh
+
+## 新增
+右键拓展集成为一个子菜单
