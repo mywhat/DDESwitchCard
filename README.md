@@ -11,3 +11,4 @@ mv libSwitchVideoCard ../..
 
 ## 新增
 右键拓展集成为一个子菜单
+将图标更改为矢量图svg
