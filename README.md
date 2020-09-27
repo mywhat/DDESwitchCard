@@ -13,3 +13,5 @@ mv libSwitchVideoCard ../..
 右键拓展集成为一个子菜单
 
 将图标更改为矢量图svg
+
+添加认证时的提示框弹出内容，将com.deepin.pkexec.switchCard.policy添加到/usr/share/polkit-1/actions即可
