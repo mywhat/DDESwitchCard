@@ -1,3 +1,4 @@
+#! /bin/bash
 Home=`echo $HOME`
 
 #输出文本
