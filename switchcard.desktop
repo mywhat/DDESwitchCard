@@ -9,16 +9,25 @@ Name[zh_CN]=切换显卡
 Type=Application
 X-DFM-MenuTypes=EmptyArea
 X-Deepin-Vendor=user-custom
-Actions=SwitchIntelAction;SwitchNvidiaAction;
+Actions=SwitchIntelAction;SwitchNvidiaAction;SwitchPrimeAction;
 
 [Desktop Action SwitchIntelAction]
 Name=Switch Intel
 Name[en]=Switch Intel
 Name[zh_CN]=英特尔显卡
-Exec=pkexec /usr/bin/bash /opt/switchcard/Intel.sh
+Icon=Intel
+Exec=pkexec /opt/apps/swichcard/switchcard.sh -s Intel
 
 [Desktop Action SwitchNvidiaAction]
 Name=Switch Nvidia
 Name[zh_CN]=英伟达显卡
 Name[en]=Switch Nvidia
-Exec=pkexec /usr/bin/bash /opt/switchcard/Nvidia.sh
+Icon=Nvidia
+Exec=pkexec /opt/apps/switchcard/switchcard.sh -s Nvidia
+
+[Desktop Action SwitchPrimeAction]
+Name=Switch Prime
+Name[zh_CN]=混合显卡
+Name[en]=Switch Prime
+Icon=Hybrid
+Exec=pkexec /opt/apps/switchcard/switchcard.sh -s Prime

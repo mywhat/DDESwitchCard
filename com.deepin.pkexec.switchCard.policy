@@ -16,21 +16,21 @@
       <allow_inactive>no</allow_inactive>
       <allow_active>auth_admin_keep</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/opt/switchcard/Intel.sh</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/opt/apps/switchcard/switchCard.sh</annotate>
     <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
   </action>
 <action id="com.deepin.pkexec.switchCard.Nvidia">
     <description>authentication</description>
     <description xml:lang="zh_CN">认证</description>
     <message>Authentication is required to view the log</message>
-    <message xml:lang="zh_CN">切换显卡需要认证</message>
+    <message xml:lang="zh_CN">重启lightdm需要认证</message>
     <icon_name>deepin-graphics-driver-manager</icon_name>
     <defaults>
       <allow_any>no</allow_any>
       <allow_inactive>no</allow_inactive>
       <allow_active>auth_admin_keep</allow_active>
     </defaults>
-    <annotate key="org.freedesktop.policykit.exec.path">/opt/switchcard/Nvidia.sh</annotate>
+    <annotate key="org.freedesktop.policykit.exec.path">/opt/apps/switchcard/reloadLightdm.sh</annotate>
     <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
   </action>
 </policyconfig>

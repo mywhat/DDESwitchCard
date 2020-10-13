@@ -29,6 +29,10 @@ public:
     QWidget *itemWidget(const QString &itemKey) override;
     QWidget *itemTipsWidget(const QString &itemKey) override;
     QWidget *itemPopupApplet(const QString &itemKey) override;
+
+    // 右键菜单
+    const QString itemContextMenu(const QString &itemKey) override;
+    void invokedMenuItem(const QString &itemKey, const QString &menuId, const bool checked) override;
 private:
     DDESwitchWidget *m_pluginWidget;
     QLabel *m_tipsWidget;

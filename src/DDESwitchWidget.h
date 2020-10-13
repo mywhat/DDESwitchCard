@@ -5,6 +5,8 @@
 #include <QTimer>
 #include <QVBoxLayout>
 
+#include "DDESwitchAppletWidget.h"
+
 class DDESwitchWidget : public QWidget
 {
     Q_OBJECT
@@ -21,6 +23,9 @@ private:
     QLabel *m_infoLabel;
     // 处理时间间隔的计时器
     QTimer *m_refreshTimer;
+
+    DDESwitchAppletWidget *m_appletWidget;
+
 };
 
 #endif // INFORMATIONWIDGET_H

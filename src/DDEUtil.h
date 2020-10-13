@@ -8,9 +8,15 @@
 #include <QStandardPaths>
 
 #define ConfigFilePath "/.config/switchcard/card.conf"
-#define IntelIconLightPath "/.config/switchcard/IntelLight.svg"
-#define NvidiaIconLightPath "/.config/switchcard/NvidiaLight.svg"
-#define IntelIconDarkPath "/.config/switchcard/IntelDark.svg"
-#define NvidiaIconDarkPath "/.config/switchcard/NvidiaDark.svg"
+//#define IntelIconLightPath "/usr/share/icons/hicolor/scalable/apps/IntelLight.svg"
+//#define NvidiaIconLightPath "/usr/share/icons/hicolor/scalable/apps/NvidiaLight.svg"
+//#define IntelIconDarkPath "/usr/share/icons/hicolor/scalable/apps/IntelDark.svg"
+//#define NvidiaIconDarkPath "/usr/share/icons/hicolor/scalable/apps/NvidiaDark.svg"
+//#define HybridIconLightPath "/usr/share/icons/hicolor/scalable/apps/HybridLight.svg"
+//#define HybridIconDarkPath "/usr/share/icons/hicolor/scalable/apps/HybridDark.svg"
+
+#define IntelIconPath "/usr/share/icons/hicolor/scalable/apps/Intel.svg"
+#define NvidiaIconPath "/usr/share/icons/hicolor/scalable/apps/Nvidia.svg"
+#define HybridIconPath "/usr/share/icons/hicolor/scalable/apps/Hybrid.svg"
 
 #endif

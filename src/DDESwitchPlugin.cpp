@@ -50,3 +50,43 @@ QWidget *DDESwitchPlugin::itemPopupApplet(const QString &itemKey)
 
     return this->m_appletWidget;
 }
+
+const QString DDESwitchPlugin::itemContextMenu(const QString &itemKey)
+{
+    Q_UNUSED(itemKey);
+
+    QList<QVariant> items;
+    items.reserve(2);
+
+    QMap<QString, QVariant> refresh;
+    refresh["itemId"] = "refresh";
+    refresh["itemText"] = "Refresh";
+    refresh["isActive"] = true;
+    items.push_back(refresh);
+
+    QMap<QString, QVariant> reload;
+    reload["itemId"] = "reload lightdm";
+    reload["itemText"] = "Reload Lightdm";
+    reload["isActive"] = true;
+    items.push_back(reload);
+
+    QMap<QString, QVariant> menu;
+    menu["items"] = items;
+    menu["checkableMenu"] = false;
+    menu["singleCheck"] = false;
+
+    // 返回 JSON 格式的菜单数据
+    return QJsonDocument::fromVariant(menu).toJson();
+}
+
+void DDESwitchPlugin::invokedMenuItem(const QString &itemKey, const QString &menuId, const bool checked)
+{
+    Q_UNUSED(itemKey);
+
+    // 根据上面接口设置的 id 执行不同的操作
+    if (menuId == "refresh") {
+        m_appletWidget->GetCardName();
+    } else if (menuId == "reload lightdm") {
+        system("pkexec /opt/apps/switchcard/reloadLightdm.sh");
+    }
+}

@@ -5,6 +5,7 @@ DDESwitchWidget::DDESwitchWidget(QWidget *parent)
     : QWidget(parent)
     , m_infoLabel(new QLabel)
     , m_refreshTimer(new QTimer(this))
+    , m_appletWidget(new DDESwitchAppletWidget)
 {
     m_infoLabel->setStyleSheet("QLabel {"
                                "color: white;"
@@ -29,10 +30,6 @@ DDESwitchWidget::DDESwitchWidget(QWidget *parent)
 
 void DDESwitchWidget::RefreshInfo()
 {
-    QFile Config(QStandardPaths::writableLocation(QStandardPaths::HomeLocation) + ConfigFilePath);
-    Config.open(QIODevice::ReadOnly | QIODevice::Text);
-    QByteArray TextByte = Config.readAll();
-
     // 更新内容
-    m_infoLabel->setText(QString("%1").arg(QString(TextByte)));
+    m_infoLabel->setText(QString("%1").arg(QString(m_appletWidget->GetCardName())));
 }
